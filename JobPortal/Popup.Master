@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Popup" Codebehind="Popup.Master.cs" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+</head>
+<body style="border: solid 2px green; padding: 0px;">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ToolkitScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div>
+        <table style="width: 100%; background-image: url('Images/flower.png'); height: 69px;"
+            width="100%" bgcolor="#FFFFFF">
+            <tr>
+                <td valign="top" style="padding: 10px" class="AppTitle">
+                    <%= ConfigurationSettings.AppSettings["AppTitle"] %>
+                </td>
+                <td valign="bottom" align="right">
+                   
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="MainTitle">
+        <asp:ContentPlaceHolder ID="cphTitle" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div>
+        <table style="width: 100%;" width="100%">
+            <tr>
+                <td valign="top" bgcolor="#FFFFFF">
+                    <div style="padding: 5px 5px 20px 5px">
+                        <asp:ContentPlaceHolder ID="cphMain" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

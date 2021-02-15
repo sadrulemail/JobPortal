@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Master" Codebehind="Master.Master.cs" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+     <script src="script/isValidNumber.js"></script>
+    <script type="text/javascript">
+        function ToggleTreeTD() {
+            if (document.getElementById('MenuTreeTD').style.display == '') {
+                document.getElementById('MenuTreeTD').style.display = 'none';
+                document.getElementById('MenuTreeToggleTD').className = 'ResizeTDHide';
+                document.getElementById('MenuTreeToggleTD').title = 'Show Menu »';
+            }
+            else {
+                document.getElementById('MenuTreeTD').style.display = '';
+                document.getElementById('MenuTreeToggleTD').className = 'ResizeTD';
+                document.getElementById('MenuTreeToggleTD').title = '« Hide Menu';
+            }
+        }
+    </script>
+</head>
+<body style="border: solid 2px green; padding: 0px;">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ToolkitScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div>
+        <table style="width: 100%; background-image: url('Images/flower.png'); height: 69px;"
+            width="100%" bgcolor="#FFFFFF">
+            <tr>
+                <td valign="top" style="padding: 10px" class="AppTitle">
+                    <a href="Default.aspx" class="AppTitle"><%= ConfigurationSettings.AppSettings["AppTitle"] %></a>
+                </td>
+                <td valign="bottom" align="right">
+                    <asp:Literal ID="LoginStatus" runat="server"></asp:Literal>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="MainTitle">
+        <asp:ContentPlaceHolder ID="cphTitle" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div>
+        <table style="width: 100%;border-collapse:collapse" width="100%">
+            <tr>
+                <td valign="top" id="MenuTreeTD" bgcolor="#F3FDBB" style="min-height: 500px;width:200px;display:'';padding-bottom:50px">
+                <div >
+                    <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ShowLines="True"
+                        OnTreeNodeDataBound="TreeView1_TreeNodeDataBound" PopulateNodesFromClient="true">
+                        <HoverNodeStyle Font-Underline="True" />
+                        <SelectedNodeStyle BackColor="#035B04" Font-Bold="True" Font-Underline="False" ForeColor="White"
+                            HorizontalPadding="3px" />
+                        <DataBindings>
+                            <asp:TreeNodeBinding DataMember="SiteMapNode" NavigateUrlField="Url" SelectAction="Expand"
+                                TextField="Title" ToolTipField="Description" />
+                        </DataBindings>
+                        <NodeStyle ForeColor="#5232F8" />
+                    </asp:TreeView></div>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </td>
+                <td valign="top" width="7px" id="MenuTreeToggleTD" class="ResizeTD" title="« Hide Menu" onclick="javascript:ToggleTreeTD()" >
+                    &nbsp;&nbsp;</td>
+                <td valign="top" bgcolor="#FFFFFF">
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server" RenderCurrentNodeAsLink="True"
+                        Font-Underline="False" Font-Bold="False" Visible="false">
+                        <CurrentNodeStyle Font-Bold="True" CssClass="df" ForeColor="White" />
+                        <NodeStyle Font-Underline="False" />
+                    </asp:SiteMapPath>
+                    <div style="padding: 7px 7px 30px 7px">
+                        <asp:ContentPlaceHolder ID="cphMain" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,20 @@
+﻿body, html, table, td, div, p, a
+{    
+    background: white;
+    font-size: 9pt;
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    overflow:auto;
+    vertical-align:top;    
+}
+body a{color:Black;}
+body a:visited{color:Black;}
+
+.div-minute
+{
+    padding:30px !important;
+    width:630px !important;
+    text-align:justify !important;
+}

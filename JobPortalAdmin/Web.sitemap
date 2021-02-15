@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Menu" url="" roles="*">
+    <siteMapNode url="" title="Menu" description="" roles="*">
+      <!--<siteMapNode url="../" title="intraweb" description="intraweb" roles="*" target="_blank" />-->
+      <siteMapNode url="Default.aspx" title="Home Page" description="" roles="*" />
+    </siteMapNode>
+    <siteMapNode url="" title="RIT" description="" roles="*" >
+      <siteMapNode url="RIT_Show.aspx" title="RIT Show" description="" roles="ADMIN,USER" dept="7" />     
+    </siteMapNode>
+    <siteMapNode url="" title="Admin" description="" roles="ADMIN">
+      <siteMapNode url="App_Users.aspx" title="App Users" description="" roles="ADMIN" />
+    </siteMapNode>
+    <siteMapNode url="" title="Profile" description="" roles="*">
+      <!--<siteMapNode url="../Profile.aspx" title="My Profile" description="" roles="*" target="_blank" />
+      <siteMapNode url="../PasswordChange.aspx" title="Change Password" description="" roles="*" target="_blank"  />-->
+      <siteMapNode url="LogOut.aspx" title="Logout" description="" roles="*" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

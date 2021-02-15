@@ -1,0 +1,88 @@
+body {
+  padding-top: 50px;
+}
+.navbar-inverse {
+    background:#8FAA4A;
+    border-color: gray;    
+    box-shadow: 0 0 10px #000000;
+    opacity:0.97; 
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #fff;
+}
+.navbar-inverse .navbar-brand {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:hover, 
+.navbar-inverse .navbar-nav>.active>a:focus {
+  color: #fff;
+  background-color: #70853c;
+  text-shadow: -1px -1px 1px rgba(0,0,0,.2);
+}
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:hover, 
+.navbar-inverse .navbar-nav>.open>a:focus {
+  background-color: #70853c;
+  color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a:hover
+{
+    background-color: #829d3e;
+    text-shadow: -1px -1px 1px rgba(0,0,0,.2);
+}
+.navbar-inverse .navbar-toggle {
+  border-color: white;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+  color: White;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+  background-color: #829d3e;
+  text-shadow: -1px -1px 1px rgba(0,0,0,.2);
+}
+.dropdown-menu{
+    background:#8FAA4A;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+  background-color:#b7b7b7;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: #b7b7b7;
+}
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+.bold {font-weight:bold}
+.control-label {
+    padding-top:7px
+}
+.form-group {
+    
+}
+/*th {
+    background-image: url('../Images/bg8.gif');   
+    background-position:bottom; 
+    background-repeat:repeat-x;
+}*/
+.TransparentGrayBackground
+{
+    position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; 
+    overflow: hidden; padding: 0; margin: 0; 
+    background-color: black;
+    filter: alpha(opacity=50); opacity: 0.7; 
+    z-index: 1000000;
+}
+.LoadingImage
+{
+	z-index:1000001;
+    box-shadow: 0 0 2px 2px Gray,0 0 100px 10px White; 
+    border-radius: 16px;
+}
+.highlight {background-color:yellow}
+
+a{color:green}
+a:hover,a:visited,a:focus{color:#017547}
+.silver {color:silver}

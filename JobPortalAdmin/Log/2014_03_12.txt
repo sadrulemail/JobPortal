@@ -1,0 +1,26 @@
+05:22:02 PM : HTTP_ORIGIN: ::1
+05:22:12 PM : HTTP_ORIGIN: ::1
+05:22:49 PM : HTTP_ORIGIN: ::1
+05:22:55 PM : HTTP_ORIGIN: localhost:51907
+05:45:42 PM : Referrer: http://localhost:51907/Checkout/TestPayment.aspx
+05:48:13 PM : Referrer: https://testmpi.itcbd.com:2222
+05:48:15 PM : Referrer: https://testmpi.itcbd.com:2222
+05:48:30 PM : Referrer: https://testmpi.itcbd.com:2222
+05:49:59 PM : Referrer: https://testmpi.itcbd.com:2222
+08:06:12 PM : HTTP_ORIGIN: 
+08:06:12 PM : PageURL=/Checkout/Passport_Payment.asmx
+08:06:12 PM : Keycode=7497A1F0-47B3-4A89-BAA0-35C3862855CB
+08:06:12 PM : PaymentType=MB_OFF
+08:06:12 PM : Referrer=
+08:15:24 PM : Referrer: http://localhost:51907/Checkout/TestPayment.aspx
+08:15:41 PM : Referrer: http://localhost:51907/Checkout/Passport_Payment.aspx?keycode=19C9C9BF-7E40-40C6-8991-D87D814AA552&onlineid=123456&enrolmentdate=12/03/2014&amount=1&fullname=Customer%20Name&email=test@gmail.com
+08:32:14 PM : HTTP_ORIGIN: 
+08:32:54 PM : PageURL=/Checkout/Passport_Payment.asmx
+08:32:54 PM : Keycode=7497A1F0-47B3-4A89-BAA0-35C3862855CB
+08:32:54 PM : PaymentType=MB_OFF
+08:32:54 PM : Referrer=
+08:32:57 PM : HTTP_ORIGIN: 
+08:32:57 PM : PageURL=/Checkout/Passport_Payment.asmx
+08:32:57 PM : Keycode=7497A1F0-47B3-4A89-BAA0-35C3862855CB
+08:32:57 PM : PaymentType=MB_OFF
+08:32:57 PM : Referrer=

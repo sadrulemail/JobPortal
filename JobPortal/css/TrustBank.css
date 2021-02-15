@@ -1,0 +1,472 @@
+﻿body, html
+{
+    background: #FFFFFF;
+    background-repeat: repeat-x;
+    margin: 0;
+    padding: 0;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fff4d0 0%, #fff6d9 15%, #fffae8 30%, #fffefa 72%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff4d0), color-stop(15%,#fff6d9), color-stop(30%,#fffae8), color-stop(72%,#fffefa), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fff4d0 0%,#fff6d9 15%,#fffae8 30%,#fffefa 72%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fff4d0 0%,#fff6d9 15%,#fffae8 30%,#fffefa 72%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fff4d0 0%,#fff6d9 15%,#fffae8 30%,#fffefa 72%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fff4d0 0%,#fff6d9 15%,#fffae8 30%,#fffefa 72%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff4d0', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    background-repeat: repeat-x;
+
+}
+.back-shadow
+{
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fff4d0 0%, #fff6d9 15%, #fffae8 30%, #fffefa 72%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff4d0), color-stop(15%,#fff6d9), color-stop(30%,#fffae8), color-stop(72%,#fffefa), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fff4d0 0%,#fff6d9 15%,#fffae8 30%,#fffefa 72%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fff4d0 0%,#fff6d9 15%,#fffae8 30%,#fffefa 72%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fff4d0 0%,#fff6d9 15%,#fffae8 30%,#fffefa 72%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fff4d0 0%,#fff6d9 15%,#fffae8 30%,#fffefa 72%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff4d0', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    background-repeat: repeat-x;
+}
+.div-body {
+    background: white;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=135, Color='#000000')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=135, Color='#000000');
+    width: 960px;
+    border: none;
+    margin: 0 auto;
+    margin-bottom:10px;
+}
+.container {
+    background: white;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=135, Color='#000000')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=135, Color='#000000');
+    border: none;    
+    margin-bottom:10px;
+}
+.headerline {
+    background: #8FAA4A;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 6px 5px;    
+    text-align:center;
+    text-shadow:-1px -1px 2px rgba(0,0,0,.7);
+}
+.div-bottom{
+    text-align:center;
+    margin-bottom:50px;
+    color:Gray;
+    font-size:90%;
+}
+.div-error{
+    margin-bottom:25px;
+    background:yellow;
+    border:1px solid #8FAA4A;
+    width:500px;
+    padding:5px;
+    box-shadow:1px 1px 2px rgba(0,0,0,.5);        
+}
+.wait{
+    background-image: url("../Images/waiting.gif");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.courier{font-family: "Courier New"}
+.bold{font-weight:bold}
+.center{text-align:center}
+.right{text-align:right}
+.left{text-align:left}
+.timeago{color:#999;font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;font-size: 11px;padding:0 2px;white-space:nowrap;background:#EEE;border-radius:4px}
+.hide
+{
+    display: none;
+}
+
+
+.TransparentGrayBackground
+{    
+    position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; 
+    overflow: hidden; padding: 0; margin: 0; 
+    background-color: black;
+    filter: alpha(opacity=50); opacity: 0.7; 
+    z-index: 10000;
+}
+.LoadingImage
+{
+	z-index:100000;
+    box-shadow: 0 0 2px 2px Gray, 0 0 100px 10px White; 
+    border-radius: 16px;
+}
+.ui-widget
+{
+    font-size:90%;
+}
+.ui-datepicker
+{
+    box-shadow: 0 0 .5em rgba(0, 0, 0, 1), inset 0 0 .8em rgba(141, 141, 141, 1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000000')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000000');
+}
+.tbl-button
+{ 
+    font-size:90%;
+    color: #555555;
+    font-family:Tahoma;
+    font-weight:bold;
+    border: solid 1px #AAAAAA;
+    cursor:pointer;
+    background-image: -webkit-linear-gradient(top,#FFFFFF 0,#DBDBDB 100%);
+    background-image: linear-gradient(to bottom,#FFFFFF 0,#DBDBDB 100%);
+    padding:5px 10px 5px 10px;
+    min-width:70px;
+    border-radius:4px;
+    outline:none;
+}
+.tbl-button:focus{background-color: #f1f1f1;color: Black !important;}
+.tbl-button:hover{box-shadow: 0 0 6px rgba(81, 203, 238, 1);border: solid 1px #999999;color: Black;}
+.pointer{cursor:pointer}
+
+.Grid
+{
+    box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.4);
+    margin-top:10px;
+}
+.Grid tbody tr th
+{
+    border: solid 1px Silver;
+    border-top: solid 1px #6B696B;
+    background-color:#6B696B;
+    background-image: url('../Images/bg8.gif');   
+    background-position:bottom; 
+    background-repeat:repeat-x;
+}
+.Grid th, .Grid th a
+{
+	font-family: "Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
+	font-stretch: Condensed;
+}
+.Grid td
+{
+    border: solid 1px Silver; 
+}
+.Grid a
+{
+    text-decoration:none;
+    color:Blue;
+}
+.Grid a:hover
+{
+    text-decoration:underline;
+}
+.Grid tr:hover
+{
+    background-color:#EEEEEE !important;
+    -webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+.GridEdit
+{
+    background-color:#FFFFB5;
+}
+.GridSelected td,.GridSelected tr,.GridSelected
+{
+    background:#FFA200 !important;
+}
+.table td,.table th{border:none}
+.HoverMenuExtender{border-radius:4px;box-shadow:2px 2px 2px rgba(0, 0, 0, 0.5);min-width:50px;min-height:26px;text-align:left}
+.info-sign
+{
+    background-image: url('../Images/info-icon.png');   
+   background-repeat:no-repeat;
+   min-height:32px;
+   min-width:32px;
+   background-position:center;
+}
+
+/*==================================================
+ * Effect 1
+ * ===============================================*/
+.effect1{
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+}
+
+/*==================================================
+ * Effect 2
+ * ===============================================*/
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+/*==================================================
+ * Effect 3
+ * ===============================================*/
+.effect3
+{
+  position: relative;
+}
+.effect3:before
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+/*==================================================
+ * Effect 4
+ * ===============================================*/
+.effect4
+{
+  position: relative;
+}
+.effect4:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  right: 10px;
+  left: auto;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+/*==================================================
+ * Effect 5
+ * ===============================================*/
+.effect5
+{
+  position: relative;
+}
+.effect5:before, .effect5:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.effect5:after
+{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+/*==================================================
+ * Effect 6
+ * ===============================================*/
+.effect6
+{
+  	position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect6:before, .effect6:after
+{
+	content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect6:after
+{
+	right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+/*==================================================
+ * Effect 7
+ * ===============================================*/
+.effect7
+{
+  	position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect7:before, .effect7:after
+{
+	content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect7:after
+{
+	right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+/*==================================================
+ * Effect 8
+ * ===============================================*/
+.effect8
+{
+  	position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before, .effect8:after
+{
+	content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect8:after
+{
+	right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+.form-control,.form-control-static{color:Black;font-family:'lucida grande',tahoma,verdana,arial,sans-serif,'Siyam Rupali','SolaimanLipi'}
+.Panel1
+{
+    padding: 2px; 
+    background-position: top; 
+    border: solid 1px silver; 
+    background-repeat: repeat-x;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=135, Color='#000000')";
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    
+    background: #f4f4f4;
+    background: -moz-linear-gradient(top,  #f4f4f4 0%, #f0f0f0 23%, #dbdbdb 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(23%,#f0f0f0), color-stop(100%,#dbdbdb));
+    background: -webkit-linear-gradient(top,  #f4f4f4 0%,#f0f0f0 23%,#dbdbdb 100%);
+    background: -o-linear-gradient(top,  #f4f4f4 0%,#f0f0f0 23%,#dbdbdb 100%);
+    background: -ms-linear-gradient(top,  #f4f4f4 0%,#f0f0f0 23%,#dbdbdb 100%);
+    background: linear-gradient(to bottom,  #f4f4f4 0%,#f0f0f0 23%,#dbdbdb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#dbdbdb',GradientType=0 );
+}
+.Panel3
+{
+    background-color: #E9FEC2; 
+    padding: 2px; 
+    background-position: top; 
+    border: solid 1px silver; 
+    background-repeat: repeat-x;
+    -webkit-box-shadow: 0 0 .4em rgba(0, 0, 0, 0.4);  
+    -moz-box-shadow: 0 0 .4em rgba(0, 0, 0, 0.4); 
+    box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.4), inset 0 0 2em rgba(143, 143, 143, 0.6); 
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}

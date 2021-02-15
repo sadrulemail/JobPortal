@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="TrustBank.master.cs" Inherits="TrustBank" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="CSS/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/TrustBank.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="div-body">
+        <div>
+         <a href="http://www.trustbank.com.bd" target="_blank" >
+            <img src="Images/tbl_logo.png" width="324" height="86" border="0" alt="Trust Bank" />
+         </a>
+         <div style="float:right;padding:10px">
+             <a href="http://www.trustbank.com.bd" target="_blank" style="text-decoration:none">
+                <img src="Images/web.gif" width="16" height="16" border="0" />
+             </a>
+             <a href="http://www.facebook.com/TrustBankLimited" target="_blank" style="text-decoration:none">
+                <img src="Images/fb.png" width="16" height="16" border="0" />
+             </a>             
+             <a href="http://plus.google.com/108352700537124603046" target="_blank" style="text-decoration:none">
+                <img src="Images/googleplus.gif" width="16" height="16" border="0" />
+             </a>
+             <a href="http://www.youtube.com/TrustBankLimited" target="_blank" style="text-decoration:none">
+                <img src="Images/youtube.png" width="16" height="16" border="0" />
+             </a>
+         </div>
+        </div>
+        
+        <div class="headerline">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="div-bottom">Copyright © 2014, Trust Bank Limited, IT Division. All Rights Reserved. Call: <a class="link" href="tel:09604016201">09604016201</a> Swift: TTBLBDDH 
+   </div>
+    </form>
+</body>
+</html>
